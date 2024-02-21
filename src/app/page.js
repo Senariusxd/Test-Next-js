@@ -1,4 +1,3 @@
-import { Body } from "./Body/Body";
 import Link from "next/link";
 
 export default function Home() {
@@ -22,7 +21,18 @@ export default function Home() {
 						style={{ margin: "5px" }}
 					/>
 				</div>
-				<Link href='/Body'>Login</Link>
+				<Link
+					style={{
+						border: "1px solid",
+						borderRadius: "5px",
+						backgroundColor: "rgb(34, 30, 29)",
+						color: "White",
+						padding: "2px",
+						margin: "2px",
+					}}
+					href='/home'>
+					Login
+				</Link>
 			</div>
 		</main>
 	);

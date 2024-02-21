@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Home() {
+export default function About() {
 	return (
 		<main className='flex flex-col items-center justify-between'>
 			<p style={{ fontSize: "40px" }}>About</p>
@@ -23,7 +23,7 @@ export default function Home() {
 				voluptates eius cum aliquam rerum incidunt cupiditate, quod sint
 				veritatis, deleniti esse distinctio ex commodi.
 			</p>
-			<Link href={"/Body"}>Patra</Link>
+			<Link href={"/home"}>Patra</Link>
 		</main>
 	);
 }

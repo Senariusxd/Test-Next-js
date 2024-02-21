@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import "../../styles/App.css";
+import "../styles/App.css";
 
 export const Count = () => {
 	const [count, setCount] = useState(0);
@@ -21,13 +21,43 @@ export const Count = () => {
 		<div>
 			<p className='text'>La cuenta es: {count}</p>
 			<div className='Counter'>
-				<button className='btnState' onClick={aum}>
+				<button
+					className='btnState'
+					style={{
+						border: "1px solid",
+						borderRadius: "5px",
+						backgroundColor: "rgb(34, 30, 29)",
+						color: "White",
+						padding: "2px",
+						margin: "2px",
+					}}
+					onClick={aum}>
 					+
 				</button>
-				<button className='btnState' onClick={dis}>
-					-
+				<button
+					className='btnState'
+					style={{
+						border: "1px solid",
+						borderRadius: "5px",
+						backgroundColor: "rgb(34, 30, 29)",
+						color: "White",
+						padding: "2px",
+						margin: "2px",
+					}}
+					onClick={dis}>
+					--
 				</button>
-				<button className='btnState' onClick={reset}>
+				<button
+					className='btnState'
+					style={{
+						border: "1px solid",
+						borderRadius: "5px",
+						backgroundColor: "rgb(34, 30, 29)",
+						color: "White",
+						padding: "2px",
+						margin: "2px",
+					}}
+					onClick={reset}>
 					Reset
 				</button>
 			</div>
@@ -36,16 +66,16 @@ export const Count = () => {
 };
 
 export const Imagen = () => {
-	const [img, setImg] = useState("/src/images/Screenshot 1.png");
+	const [img, setImg] = useState("./images/Screenshot 1.png");
 	const [counter, setCount] = useState(0);
 
 	const pass = () => {
 		setCount(counter + 1);
 
 		if (counter === 0) {
-			setImg("/src/images/Screenshot 2.png");
+			setImg("./images/Screenshot 2.png");
 		} else if (counter === 1) {
-			setImg("/src/images/Screenshot 3.png");
+			setImg("./images/Screenshot 3.png");
 		} else if (counter === 2) {
 			setCount(0);
 		}
@@ -56,7 +86,16 @@ export const Imagen = () => {
 			<p style={{ color: "white" }}>Cuenta: {counter}</p>
 			<img src={img} alt='descption' />
 			<div>
-				<button className='pass' onClick={pass}>
+				<button
+					style={{
+						border: "1px solid",
+						borderRadius: "5px",
+						backgroundColor: "rgb(34, 30, 29)",
+						color: "White",
+						padding: "2px",
+						margin: "2px",
+					}}
+					onClick={pass}>
 					Pass
 				</button>
 			</div>
@@ -73,7 +112,11 @@ export function InputField() {
 	return (
 		<div>
 			<div>
-				<input type='text' onChange={actualizar} />
+				<input
+					style={{ borderRadius: "5px", color: "black" }}
+					type='text'
+					onChange={actualizar}
+				/>
 				<p>Input text: {texto.length}</p>
 			</div>
 		</div>
@@ -89,7 +132,16 @@ export function Toggle() {
 
 	return (
 		<div>
-			<button onClick={alternar}>Show/Hide Text</button>
+			<button
+				style={{
+					border: "1px solid",
+					borderRadius: "5px",
+					backgroundColor: "rgb(34, 30, 29)",
+					color: "White",
+				}}
+				onClick={alternar}>
+				Show/Hide Text
+			</button>
 			{show && <h3>shh!... I`m hiding from the user</h3>}
 		</div>
 	);
@@ -104,7 +156,9 @@ export function ColorSwitch() {
 
 	return (
 		<div>
-			<select onChange={cambiar}>
+			<select
+				style={{ borderRadius: "5px", color: "black" }}
+				onChange={cambiar}>
 				<option value=''>Select a color</option>
 				<option value='red'>Red</option>
 				<option value='blue'>Blue</option>
