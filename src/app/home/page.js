@@ -6,11 +6,18 @@ import { Imagen } from "../../components/Function";
 import { InputField } from "../../components/Function";
 import { Toggle } from "../../components/Function";
 import { ColorSwitch } from "../../components/Function";
+import { Roboto } from "next/font/google";
+
+const roboto = Roboto({
+	weight: ["300", "400", "500"],
+	style: ["italic", "normal"],
+	subsets: ["latin"],
+});
 
 export default function Home() {
 	return (
 		<main className='flex min-h-screen flex-col items-center justify-between'>
-			<div>
+			<div className={roboto.className}>
 				<div
 					className='container'
 					style={{

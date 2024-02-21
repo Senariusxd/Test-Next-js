@@ -132,3 +132,9 @@
 	margin: 20px;
 	padding: 50px;
 }
+
+.tienda-dropdown {
+	position: absolute;
+	background: white;
+	z-index: 9999;
+}
