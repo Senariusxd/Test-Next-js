@@ -75,7 +75,7 @@ export default function Navbar() {
 						<button>Search</button>
 					</li>
 					<li>
-						<Link href='/'>Logout</Link>
+						<Link href='/login'>Logout</Link>
 					</li>
 				</ul>
 			</div>

@@ -16,7 +16,7 @@ export default function Tienda() {
 				</li>
 			</uol>
 			<br />
-			<Link href={"/home"}>Patra</Link>
+			<Link href={"home"}>Patra</Link>
 		</main>
 	);
 }

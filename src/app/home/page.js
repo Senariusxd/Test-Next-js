@@ -118,7 +118,7 @@ export default function Home() {
 					</div>
 				</div>
 
-				<footer className='footer'>Hecho por Senas</footer>
+				
 			</div>
 		</main>
 	);
