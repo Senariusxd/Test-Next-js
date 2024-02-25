@@ -16,7 +16,7 @@ export default function Navbar() {
 	};
 
 	return (
-		<nav className='all-container'>
+		<nav className='all-container' style={{color: "white"}}>
 			<div>
 				<ul
 					className='navbar'
@@ -57,8 +57,8 @@ export default function Navbar() {
 						)}
 					</li>
 					<li>
-						<Link className='qwe' href='/home/contact'>
-							Contact
+						<Link className='qwe' href='/home/articulos'>
+							Articulos
 						</Link>
 					</li>
 					<li>
