@@ -25,6 +25,7 @@ export default function Navbar() {
 						justifyContent: "space-between",
 						alignItems: "center",
 					}}>
+					<li><a href='/home' style={{fontSize: "20px"}}>Project</a></li>
 					<li>
 						<Link className='qwe' href='/home'>
 							Home
