@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import PostArt from '../page'
 
 async function LoadPage(id){
@@ -17,7 +17,13 @@ async function Page({params}) {
             <p><b style={{fontSize: "20px"}}>Informacion:</b> {post.body}</p>
             <hr />
         <div style={{fontSize: "30px"}}>Otras publicaciones</div>
-        <PostArt />
+        
+        <Suspense fallback={<div>
+            Loading Post...
+        </div>}>
+            <PostArt />
+        </Suspense>
+        
         </div>
         
     )

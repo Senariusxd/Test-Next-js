@@ -1,11 +1,11 @@
 import React from "react";
-import { contacts } from "../../components/list";
-import { emojipedia } from "../../components/list";
-import { Count } from "../../components/Function";
-import { Imagen } from "../../components/Function";
-import { InputField } from "../../components/Function";
-import { Toggle } from "../../components/Function";
-import { ColorSwitch } from "../../components/Function";
+import { contacts } from "@/components/list";
+import { emojipedia } from "@/components/list";
+import { Count } from "@/components/Function";
+import { Imagen } from "@/components/Function";
+import { InputField } from "@/components/Function";
+import { Toggle } from "@/components/Function";
+import { ColorSwitch } from "@/components/Function";
 import { Roboto } from "next/font/google";
 
 const roboto = Roboto({
